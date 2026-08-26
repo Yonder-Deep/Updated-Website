@@ -22,7 +22,7 @@ export default function TritonRoboSub() {
         <ScrollReveal delay={150}>
           <p className="comingSoonText">
             We&apos;re currently developing this page to showcase
-            Triton RoboSub's future and current projects. Stay Tuned!
+            Triton RoboSub's ongoing and future projects. Stay Tuned!
           </p>
         </ScrollReveal>
 
