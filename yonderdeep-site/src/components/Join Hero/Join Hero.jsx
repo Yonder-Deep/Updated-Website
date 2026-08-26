@@ -10,9 +10,9 @@ export default function Join_Hero() {
       <div className="join_heroOverlay"></div>
 
       <div className="join_heroContent">
-        <h1 className="join_heroTitle">Join Us!</h1>
+        <h1 className="join_heroTitle ">Join Us!</h1>
         
       </div>
-    </section>
+    </section> 
   );
 }
