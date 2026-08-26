@@ -4,11 +4,7 @@ import "./AUV.css";
 import ModelViewer from "../../components/ModelViewer/ModelViewer";
 import ScrollReveal from "../../components/ScrollReveal/ScrollReveal";
 
-/* ---------------- HERO ---------------- */
-
 import heroImage from "../../assets/AUV/Nautilus-AUV-Render-2.png";
-
-/* ---------------- TIMELINE IMAGES ---------------- */
 
 import firstMeeting from "../../assets/AUV/2017.png";
 import poolTest from "../../assets/AUV/2018.png";
@@ -26,11 +22,6 @@ import auvPoolTest4Group from "../../assets/AUV/2023p1.jpg"
 
 import arctic1 from "../../assets/AUV/Arctic1.JPG";
 import arctic2 from "../../assets/AUV/Arctic2.jpg";
-
-
-/* =========================================================
-   TIMELINE GALLERY
-   ========================================================= */
 
 function TimelineGallery({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -102,11 +93,6 @@ function TimelineGallery({ images }) {
     </div>
   );
 }
-
-
-/* =========================================================
-   AUV PAGE
-   ========================================================= */
 
 export default function AUV() {
   const timeline = [
@@ -213,7 +199,7 @@ export default function AUV() {
   return (
     <main className="auvPage">
 
-      {/* ================= HERO ================= */}
+      {}
 
       <section
         className="auvHero"
@@ -241,7 +227,7 @@ export default function AUV() {
       </section>
 
 
-      {/* ================= INTRO ================= */}
+      {}
 
       <section className="projectIntroSection">
 
@@ -257,7 +243,7 @@ export default function AUV() {
       </section>
 
 
-      {/* ================= FEATURE IMAGE ================= */}
+      {}
 
       <section className="projectImageSection">
         <img
@@ -268,7 +254,7 @@ export default function AUV() {
       </section>
 
 
-      {/* ================= OVERVIEW ================= */}
+      {}
 
       <section className="overviewSection">
         <div className="overviewGrid">
@@ -346,8 +332,7 @@ export default function AUV() {
       </section>
 
 
-      {/* ================= TIMELINE ================= */}
-
+      {}
       <section className="timelineSection">
 
         <ScrollReveal>

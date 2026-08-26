@@ -3,30 +3,7 @@ import "./USV.css";
 
 import ModelViewer from "../../components/ModelViewer/ModelViewer";
 import ScrollReveal from "../../components/ScrollReveal/ScrollReveal";
-
-/* ---------------- HERO ---------------- */
-
-/*
-  Change this path if your actual USV hero image
-  has a different filename.
-*/
 import heroImage from "../../assets/USVDramatic.png";
-
-/* ---------------- TIMELINE IMAGES ---------------- */
-
-/*
-  Replace these with your real USV timeline images.
-
-  Example:
-
-  import usv2025A from "../../assets/USV/2025-1.jpg";
-  import usv2025B from "../../assets/USV/2025-2.jpg";
-*/
-
-
-/* =========================================================
-   TIMELINE GALLERY
-   ========================================================= */
 
 function TimelineGallery({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -111,16 +88,7 @@ function TimelineGallery({ images }) {
 }
 
 
-/* =========================================================
-   USV PAGE
-   ========================================================= */
-
 export default function USV() {
-
-  /*
-    Replace these placeholder timeline entries with your
-    actual USV project history when you have the dates/images.
-  */
 
   const timeline = [
     {
@@ -156,7 +124,7 @@ export default function USV() {
     <main className="usvPage">
 
 
-      {/* ================= HERO ================= */}
+      {}
 
       <section
         className="usvHero"
@@ -186,7 +154,7 @@ export default function USV() {
       </section>
 
 
-      {/* ================= INTRO ================= */}
+      {}
 
       <section className="projectIntroSection">
 
@@ -203,7 +171,7 @@ export default function USV() {
       </section>
 
 
-      {/* ================= FEATURE IMAGE ================= */}
+      {}
 
       <section className="projectImageSection">
 
@@ -216,14 +184,14 @@ export default function USV() {
       </section>
 
 
-      {/* ================= OVERVIEW ================= */}
+      {}
 
       <section className="overviewSection">
 
         <div className="overviewGrid">
 
 
-          {/* LEFT SIDE */}
+          {}
 
           <div className="overviewText">
 
@@ -289,7 +257,7 @@ export default function USV() {
           </div>
 
 
-          {/* RIGHT SIDE - 3D MODEL */}
+          {}
 
           <div className="overviewViewer">
 
@@ -311,7 +279,7 @@ export default function USV() {
       </section>
 
 
-      {/* ================= TIMELINE ================= */}
+      {}
 
       <section className="timelineSection">
 
