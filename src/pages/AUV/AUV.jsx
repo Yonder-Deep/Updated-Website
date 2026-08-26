@@ -261,7 +261,7 @@ export default function AUV() {
 
       <section className="projectImageSection">
         <img
-          src={`${import.meta.env.BASE_URL}Images/USVGroup.jpg`}
+          src={`${import.meta.env.BASE_URL}Images/AUVgroup.jpg`}
           alt="Yonder Deep team with the Nautilus AUV"
           className="projectFeatureImage"
         />
