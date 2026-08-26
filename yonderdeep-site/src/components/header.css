@@ -23,19 +23,23 @@
 }
 
 .brand {
+  width: 90px;
+  height: 90px;
+
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  text-decoration: none;
+  overflow: visible;
 }
 
 .logo {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
 
   object-fit: contain;
 
-  transform: scale(1.45);
+  transform: scale(1.9);
   transform-origin: center;
 
   filter:
