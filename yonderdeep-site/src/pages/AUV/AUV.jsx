@@ -13,9 +13,9 @@ import heroImage from "../../assets/AUV/Nautilus-AUV-Render-2.png";
 import firstMeeting from "../../assets/AUV/2017.png";
 import poolTest from "../../assets/AUV/2018.png";
 
-import auvCad from "../../assets/AUV/auvcad.png";
-import auvBuilt from "../../assets/AUV/auvbuilt.png";
-import auvPoolTest from "../../assets/AUV/auvpooltest.png";
+import auvCad from "../../assets/AUV/AUVcad.png";
+import auvBuilt from "../../assets/AUV/AUVbuilt.png";
+import auvPoolTest from "../../assets/AUV/AUVpooltest.png";
 
 import presentation from "../../assets/AUV/DIB-group-photo-1-1.png";
 import auvPoolTest2 from "../../assets/AUV/20-21-leads-assembly-1-1.png";
