@@ -1,8 +1,9 @@
 import "./Sponsors.css";
 
-import AltiumLogo from "../../assets/sponsors/Altium_Logo.png";
-import BlueRoboticsLogo from "../../assets/sponsors/BlueRobotics_Logo.png";
-import TGIFLogo from "../../assets/sponsors/TGIF_Logo.png";const sponsors = [
+import AltiumLogo from "../../assets/Sponsors/Altium_Logo.png";
+import BlueRoboticsLogo from "../../assets/Sponsors/BlueRobotics_Logo.png";
+import TGIFLogo from "../../assets/Sponsors/TGIF_Logo.png";
+const sponsors = [
   {
     name: "Altium",
     logo: AltiumLogo,
