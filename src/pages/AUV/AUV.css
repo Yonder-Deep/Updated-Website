@@ -1,0 +1,780 @@
+/* =========================================================
+   AUV PAGE
+   ========================================================= */
+
+.auvPage {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      to bottom,
+      var(--navy-deep),
+      var(--navy-mid),
+      var(--navy-deep)
+    );
+
+  color: var(--snow);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.auvPage .auvHero {
+  min-height: 68vh;
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+}
+
+.auvPage .heroOverlay {
+  width: 100%;
+
+  padding:
+    180px
+    max(48px, calc((100vw - 1200px) / 2))
+    40px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(6, 24, 36, 0.98),
+      rgba(6, 24, 36, 0.55),
+      rgba(6, 24, 36, 0.1)
+    );
+
+  box-sizing: border-box;
+}
+
+.auvPage .heroContent {
+  animation: heroFadeUp 1.2s ease-out forwards;
+}
+
+.auvPage .heroOverlay h1 {
+  margin: 0 0 18px;
+
+  color: var(--snow);
+
+  font-size: clamp(4rem, 8vw, 7rem);
+  font-weight: 500;
+  line-height: 0.95;
+
+  text-transform: uppercase;
+
+
+}
+
+.auvPage .heroOverlay p {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: var(--snow);
+
+  font-size: 1.2rem;
+  line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   PROJECT INTRO
+   ========================================================= */
+
+.auvPage .projectIntroSection {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding:
+    80px
+    48px
+    32px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+.auvPage .projectIntroSection p {
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  color: var(--ice-gray);
+
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FEATURE IMAGE
+   ========================================================= */
+
+.auvPage .projectImageSection {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding:
+    10px
+    48px
+    28px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+}
+
+.auvPage .projectFeatureImage {
+  width: 100%;
+  max-width: 1000px;
+
+  height: 460px;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  margin: 0;
+
+  border-radius: 18px;
+
+  border:
+    1px solid
+    var(--border-ice);
+}
+
+
+/* =========================================================
+   OVERVIEW
+   ========================================================= */
+
+.auvPage .overviewSection {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding:
+    28px
+    48px
+    60px;
+
+  box-sizing: border-box;
+}
+
+.auvPage .overviewGrid {
+  display: grid;
+
+  grid-template-columns:
+    1.1fr
+    1fr;
+
+  gap: 48px;
+
+  align-items: center;
+}
+
+.auvPage .overviewText {
+  text-align: left;
+}
+
+.auvPage .sectionEyebrow {
+  margin:
+    0
+    0
+    12px;
+
+  color: var(--glacier-cyan);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+.auvPage .overviewText h2 {
+  margin:
+    0
+    0
+    20px;
+
+  color: var(--snow);
+
+  font-size:
+    clamp(
+      2.6rem,
+      5vw,
+      4rem
+    );
+
+  font-weight: 500;
+}
+
+.auvPage .overviewText p {
+  max-width: 600px;
+
+  margin:
+    0
+    0
+    16px;
+
+  color: var(--ice-gray);
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   OVERVIEW HIGHLIGHTS
+   ========================================================= */
+
+.auvPage .overviewHighlights {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+
+  gap: 16px;
+
+  margin-top: 24px;
+}
+
+.auvPage .highlightItem {
+  padding:
+    18px
+    20px;
+
+  border-radius: 14px;
+
+  background:
+    var(--surface-soft);
+
+  border:
+    1px solid
+    var(--border-ice);
+}
+
+.auvPage .highlightItem span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--ice-gray);
+
+  font-size: 0.85rem;
+}
+
+.auvPage .highlightItem strong {
+  color: var(--glacier-cyan);
+
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   MODEL VIEWER
+   ========================================================= */
+
+.auvPage .overviewViewer {
+  width: 100%;
+}
+
+.auvPage .modelViewerContainer {
+  width: 100%;
+  height: 420px;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  background:
+    var(--surface-soft);
+
+  border:
+    1px solid
+    var(--border-ice);
+}
+
+.auvPage .modelViewerContainer model-viewer {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+
+.auvPage .timelineSection {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding:
+    30px
+    48px
+    90px;
+
+  box-sizing: border-box;
+}
+
+.auvPage .timelineSection h2 {
+  margin:
+    0
+    0
+    32px;
+
+  color: var(--snow);
+
+  font-size:
+    clamp(
+      2.3rem,
+      4vw,
+      3.3rem
+    );
+
+  font-weight: 500;
+}
+
+.auvPage .timelineCard {
+  margin-bottom: 18px;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background:
+    var(--surface-soft);
+
+  border:
+    1px solid
+    var(--border-ice);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.auvPage .timelineCard:hover {
+  transform:
+    translateY(-2px);
+
+  background:
+    var(--surface-hover);
+}
+
+.auvPage .timelineCard[open] {
+  background:
+    var(--surface-hover);
+}
+
+
+/* =========================================================
+   TIMELINE HEADER
+   ========================================================= */
+
+.auvPage .timelineCard summary {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  padding:
+    24px
+    28px;
+
+  cursor: pointer;
+}
+
+.auvPage .timelineCard summary::-webkit-details-marker {
+  display: none;
+}
+
+.auvPage .timelineDot {
+  width: 12px;
+  height: 12px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background:
+    var(--glacier-cyan);
+
+  box-shadow:
+    0 0 12px
+    rgba(158, 221, 238, 0.65);
+}
+
+.auvPage .timelineCard h3 {
+  margin: 0;
+
+  color: var(--snow);
+
+  font-size: 1.55rem;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   TIMELINE CONTENT
+   ========================================================= */
+
+.auvPage .timelineContent {
+  padding:
+    0
+    28px
+    32px
+    58px;
+}
+
+.auvPage .timelineContent p {
+  max-width: 850px;
+
+  margin: 0;
+
+  color: var(--ice-gray);
+
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   TIMELINE GALLERY
+   ========================================================= */
+
+.auvPage .timelineGallery {
+  width: 100%;
+  max-width: 760px;
+
+  margin-top: 30px;
+}
+
+.auvPage .galleryImageContainer {
+  position: relative;
+
+  width: 100%;
+  height: 420px;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background:
+    rgba(0, 0, 0, 0.22);
+
+  border:
+    1px solid
+    var(--border-ice);
+}
+
+.auvPage .galleryMainImage {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   GALLERY ARROWS
+   ========================================================= */
+
+.auvPage .galleryArrow {
+  position: absolute;
+
+  top: 50%;
+
+  transform:
+    translateY(-50%);
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background:
+    rgba(6, 24, 36, 0.75);
+
+  color: var(--snow);
+
+  font-size: 2rem;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.auvPage .galleryArrow:hover {
+  background:
+    rgba(6, 24, 36, 0.95);
+
+  transform:
+    translateY(-50%)
+    scale(1.05);
+}
+
+.auvPage .galleryArrowLeft {
+  left: 16px;
+}
+
+.auvPage .galleryArrowRight {
+  right: 16px;
+}
+
+
+/* =========================================================
+   GALLERY CAPTION
+   ========================================================= */
+
+.auvPage .galleryInfo {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 24px;
+
+  padding-top: 14px;
+}
+
+.auvPage .galleryInfo p {
+  margin: 0;
+
+  color: var(--ice-gray);
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.auvPage .galleryInfo span {
+  flex-shrink: 0;
+
+  color: var(--glacier-cyan);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   ANIMATION
+   ========================================================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .auvPage .heroOverlay {
+    padding:
+      150px
+      28px
+      65px;
+  }
+
+  .auvPage .heroContent {
+    transform: translateY(15px);
+  }
+
+  .auvPage .projectIntroSection,
+  .auvPage .projectImageSection,
+  .auvPage .overviewSection,
+  .auvPage .timelineSection {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .auvPage .overviewGrid {
+    grid-template-columns:
+      1fr;
+
+    gap: 32px;
+  }
+
+  .auvPage .overviewText {
+    text-align: center;
+  }
+
+  .auvPage .overviewText p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .auvPage .overviewHighlights {
+    grid-template-columns:
+      1fr;
+  }
+
+  .auvPage .modelViewerContainer {
+    height: 360px;
+  }
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(65px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .auvPage .auvHero {
+    min-height: 60vh;
+  }
+
+  .auvPage .heroOverlay {
+    padding:
+      130px
+      24px
+      50px;
+  }
+
+  .auvPage .heroContent {
+    transform: translateY(10px);
+  }
+
+  .auvPage .heroOverlay p {
+    font-size: 1rem;
+  }
+
+  .auvPage .projectIntroSection {
+    padding:
+      25px
+      24px
+      15px;
+  }
+
+  .auvPage .projectImageSection {
+    padding:
+      10px
+      24px
+      20px;
+  }
+
+  .auvPage .projectFeatureImage {
+    width: 100%;
+    height: 280px;
+  }
+
+  .auvPage .overviewSection {
+    padding:
+      20px
+      24px
+      50px;
+  }
+
+  .auvPage .overviewHighlights {
+    grid-template-columns:
+      1fr;
+  }
+
+  .auvPage .modelViewerContainer {
+    height: 300px;
+  }
+
+  .auvPage .timelineSection {
+    padding:
+      25px
+      24px
+      70px;
+  }
+
+  .auvPage .timelineContent {
+    padding:
+      0
+      22px
+      26px;
+  }
+
+  .auvPage .galleryImageContainer {
+    height: 280px;
+  }
+
+  .auvPage .galleryArrow {
+    width: 40px;
+    height: 40px;
+
+    font-size: 1.7rem;
+  }
+
+  .auvPage .galleryArrowLeft {
+    left: 10px;
+  }
+
+  .auvPage .galleryArrowRight {
+    right: 10px;
+  }
+
+  .auvPage .galleryInfo {
+    flex-direction: column;
+
+    gap: 6px;
+  }
+}

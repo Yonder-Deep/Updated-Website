@@ -1,0 +1,838 @@
+/* =========================================================
+   USV PAGE
+   ========================================================= */
+
+.usvPage {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #17384c,
+      #1e4a63,
+      #245a75
+    );
+
+  color: var(--snow);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.usvPage .usvHero {
+  min-height: 68vh;
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+}
+
+.usvPage .heroOverlay {
+  width: 100%;
+
+  padding:
+    180px
+    max(48px, calc((100vw - 1200px) / 2))
+    40px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(16, 45, 61, 0.96),
+      rgba(24, 70, 94, 0.58),
+      rgba(36, 90, 117, 0.12)
+    );
+
+  box-sizing: border-box;
+}
+
+
+/* Hero animation */
+
+.usvPage .heroContent {
+  animation:
+    usvHeroFadeUp
+    1.2s
+    ease-out
+    forwards;
+}
+
+.usvPage .heroOverlay h1 {
+  margin: 0 0 18px;
+
+  color: var(--snow);
+
+  font-size:
+    clamp(
+      4rem,
+      8vw,
+      7rem
+    );
+
+  font-weight: 500;
+  line-height: 0.95;
+
+  text-transform: uppercase;
+}
+
+.usvPage .heroOverlay p {
+  max-width: 760px;
+
+  margin: 0;
+
+  color:
+    rgba(
+      247,
+      251,
+      253,
+      0.96
+    );
+
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROJECT INTRO
+   ========================================================= */
+
+.usvPage .projectIntroSection {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding:
+    80px
+    48px
+    32px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+.usvPage .projectIntroSection p {
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  color: rgba(247, 251, 253, 0.9);
+
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FEATURE IMAGE
+   ========================================================= */
+
+.usvPage .projectImageSection {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding:
+    10px
+    48px
+    28px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+}
+
+.usvPage .projectFeatureImage {
+  width: 100%;
+  max-width: 1000px;
+
+  height: 460px;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  margin: 0;
+
+  border-radius: 18px;
+
+  border:
+    1px solid
+    rgba(16, 44, 61, 0.18);
+
+  box-shadow:
+    0 10px 28px
+    rgba(16, 44, 61, 0.12);
+}
+
+
+/* =========================================================
+   OVERVIEW
+   ========================================================= */
+
+.usvPage .overviewSection {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding:
+    28px
+    48px
+    60px;
+
+  box-sizing: border-box;
+}
+
+.usvPage .overviewGrid {
+  display: grid;
+
+  grid-template-columns:
+    1.1fr
+    1fr;
+
+  gap: 48px;
+
+  align-items: center;
+}
+
+.usvPage .overviewText {
+  text-align: left;
+}
+
+.usvPage .sectionEyebrow {
+  margin:
+    0
+    0
+    12px;
+
+  color: #a9e1f2;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+.usvPage .overviewText h2 {
+  margin:
+    0
+    0
+    20px;
+
+  color: var(--snow);
+
+  font-size:
+    clamp(
+      2.6rem,
+      5vw,
+      4rem
+    );
+
+  font-weight: 500;
+}
+
+.usvPage .overviewText p {
+  max-width: 600px;
+
+  margin:
+    0
+    0
+    16px;
+
+  color: #17384c;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   SPECIFICATION CARDS
+   ========================================================= */
+
+.usvPage .overviewHighlights {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+
+  gap: 16px;
+
+  margin-top: 24px;
+}
+
+.usvPage .highlightItem {
+  padding:
+    18px
+    20px;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+
+  box-shadow:
+    0 8px 22px
+    rgba(8, 28, 40, 0.14);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.usvPage .highlightItem:hover {
+  transform:
+    translateY(-2px);
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.95
+    );
+
+  box-shadow:
+    0 8px 20px
+    rgba(16, 44, 61, 0.1);
+}
+
+.usvPage .highlightItem span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #587184;
+
+  font-size: 0.85rem;
+}
+
+.usvPage .highlightItem strong {
+  color: #12384e;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   MODEL VIEWER
+   ========================================================= */
+
+.usvPage .overviewViewer {
+  width: 100%;
+}
+
+.usvPage .modelViewerContainer {
+  width: 100%;
+  height: 420px;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.22);
+
+  box-shadow:
+    0 8px 24px
+    rgba(8, 28, 40, 0.14);
+}
+
+.usvPage .modelViewerContainer model-viewer {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+
+.usvPage .timelineSection {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding:
+    30px
+    48px
+    90px;
+
+  box-sizing: border-box;
+}
+
+.usvPage .timelineSection h2 {
+  margin:
+    0
+    0
+    32px;
+
+  color: var(--snow);
+
+  font-size:
+    clamp(
+      2.3rem,
+      4vw,
+      3.3rem
+    );
+
+  font-weight: 500;
+}
+
+.usvPage .timelineCard {
+  margin-bottom: 18px;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.96
+    );
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.2);
+
+  box-shadow:
+    0 8px 22px
+    rgba(8, 28, 40, 0.12);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.usvPage .timelineCard:hover {
+  transform:
+    translateY(-2px);
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.92
+    );
+
+  box-shadow:
+    0 8px 22px
+    rgba(16, 44, 61, 0.1);
+}
+
+.usvPage .timelineCard[open] {
+  background:#ffffff;
+}
+
+
+/* =========================================================
+   TIMELINE HEADER
+   ========================================================= */
+
+.usvPage .timelineCard summary {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  padding:
+    24px
+    28px;
+
+  cursor: pointer;
+}
+
+.usvPage .timelineCard summary::-webkit-details-marker {
+  display: none;
+}
+
+.usvPage .timelineDot {
+  width: 12px;
+  height: 12px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #53b6d5;
+
+  box-shadow:
+    0 0 12px
+    rgba(83, 182, 213, 0.55);
+}
+
+.usvPage .timelineCard h3 {
+  margin: 0;
+
+  color: #12384e;
+
+  font-size: 1.55rem;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   TIMELINE CONTENT
+   ========================================================= */
+
+.usvPage .timelineContent {
+  padding:
+    0
+    28px
+    32px
+    58px;
+}
+
+.usvPage .timelineContent p {
+  max-width: 850px;
+
+  margin: 0;
+
+  color: #385568;
+
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   TIMELINE GALLERY
+   ========================================================= */
+
+.usvPage .timelineGallery {
+  width: 100%;
+  max-width: 760px;
+
+  margin-top: 30px;
+}
+
+.usvPage .galleryImageContainer {
+  position: relative;
+
+  width: 100%;
+  height: 420px;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.48
+    );
+
+  border:
+    1px solid
+    rgba(16, 44, 61, 0.14);
+}
+
+.usvPage .galleryMainImage {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   GALLERY ARROWS
+   ========================================================= */
+
+.usvPage .galleryArrow {
+  position: absolute;
+
+  top: 50%;
+
+  transform:
+    translateY(-50%);
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background:
+    rgba(
+      15,
+      45,
+      64,
+      0.76
+    );
+
+  color: var(--snow);
+
+  font-size: 2rem;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.usvPage .galleryArrow:hover {
+  background:
+    rgba(
+      15,
+      45,
+      64,
+      0.96
+    );
+
+  transform:
+    translateY(-50%)
+    scale(1.05);
+}
+
+.usvPage .galleryArrowLeft {
+  left: 16px;
+}
+
+.usvPage .galleryArrowRight {
+  right: 16px;
+}
+
+
+/* =========================================================
+   GALLERY CAPTION
+   ========================================================= */
+
+.usvPage .galleryInfo {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 24px;
+
+  padding-top: 14px;
+}
+
+.usvPage .galleryInfo p {
+  margin: 0;
+
+  color: #284b60;
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.usvPage .galleryInfo span {
+  flex-shrink: 0;
+
+  color: #176d94;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   ANIMATION
+   ========================================================= */
+
+@keyframes usvHeroFadeUp {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(65px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(40px);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .usvPage .heroOverlay {
+    padding:
+      150px
+      28px
+      65px;
+  }
+
+  .usvPage .projectIntroSection,
+  .usvPage .projectImageSection,
+  .usvPage .overviewSection,
+  .usvPage .timelineSection {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .usvPage .overviewGrid {
+    grid-template-columns:
+      1fr;
+
+    gap: 32px;
+  }
+
+  .usvPage .overviewText {
+    text-align: center;
+  }
+
+  .usvPage .overviewText p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .usvPage .overviewHighlights {
+    grid-template-columns:
+      1fr;
+  }
+
+  .usvPage .modelViewerContainer {
+    height: 360px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .usvPage .usvHero {
+    min-height: 60vh;
+  }
+
+  .usvPage .heroOverlay {
+    padding:
+      130px
+      24px
+      50px;
+  }
+
+  .usvPage .heroOverlay p {
+    font-size: 1rem;
+  }
+
+  .usvPage .projectIntroSection {
+    padding:
+      50px
+      24px
+      20px;
+  }
+
+  .usvPage .projectImageSection {
+    padding:
+      10px
+      24px
+      20px;
+  }
+
+  .usvPage .projectFeatureImage {
+    width: 100%;
+    height: 280px;
+  }
+
+  .usvPage .overviewSection {
+    padding:
+      20px
+      24px
+      50px;
+  }
+
+  .usvPage .overviewHighlights {
+    grid-template-columns:
+      1fr;
+  }
+
+  .usvPage .modelViewerContainer {
+    height: 300px;
+  }
+
+  .usvPage .timelineSection {
+    padding:
+      25px
+      24px
+      70px;
+  }
+
+  .usvPage .timelineContent {
+    padding:
+      0
+      22px
+      26px;
+  }
+
+  .usvPage .galleryImageContainer {
+    height: 280px;
+  }
+
+  .usvPage .galleryArrow {
+    width: 40px;
+    height: 40px;
+
+    font-size: 1.7rem;
+  }
+
+  .usvPage .galleryArrowLeft {
+    left: 10px;
+  }
+
+  .usvPage .galleryArrowRight {
+    right: 10px;
+  }
+
+  .usvPage .galleryInfo {
+    flex-direction: column;
+
+    gap: 6px;
+  }
+}
