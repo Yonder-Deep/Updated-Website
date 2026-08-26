@@ -208,7 +208,7 @@ export default function USV() {
       <section className="projectImageSection">
 
         <img
-          src="${import.meta.env.BASE_URL}Images/USVGroup.jpg"
+          src={`${import.meta.env.BASE_URL}Images/USVGroup.jpg`}
           alt="Yonder Deep team with the Neptune USV"
           className="projectFeatureImage"
         />
