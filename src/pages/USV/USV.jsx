@@ -262,7 +262,7 @@ export default function USV() {
           <div className="overviewViewer">
 
             <ModelViewer
-              src="/Models/USV+Assembly-modified.glb"
+              src="Models/USV+Assembly-modified.glb"
               alt="Neptune USV 3D model"
               camera-controls
               auto-rotate
