@@ -6,7 +6,7 @@ const advisors = [
   {
     name: "Grant Deane",
     role: "Faculty Advisor",
-    image:"/Images/Member Photos/Grant.png",
+    image: `${import.meta.env.BASE_URL}Images/Member Photos/Grant.png`,
     description:"",
   },
 ];
@@ -33,7 +33,7 @@ const executives = [
   {
     name: "Brennon Yoo",
     role: "Software Lead",
-    image:"/Images/Member Photos/Brennon.jpg",
+    image: `${import.meta.env.BASE_URL}Images/Member Photos/Brennon.jpg`,
     description: "Oversees autonomy, perception, navigation, and onboard software systems.",
   },
   {
