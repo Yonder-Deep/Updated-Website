@@ -1,5 +1,5 @@
 import "./Join Hero.css";
-import heroImage from "../../assets/linkedinED.jpg";
+import heroImage from "../../assets/linkedinED.JPG";
 
 export default function Join_Hero() {
   return (
