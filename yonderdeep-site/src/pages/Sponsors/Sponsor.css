@@ -1,0 +1,291 @@
+/* =========================================================
+   SPONSOR PAGE
+   ========================================================= */
+
+.sponsorPage {
+  min-height: 100vh;
+
+  background: var(--snow);
+
+  color: var(--navy-deep);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.sponsorHero {
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  background:
+    url("/Images/SponsorHero.jpg");
+      background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding-top: 82px; /* navbar clearance */
+
+  box-sizing: border-box;
+}
+
+.sponsorHeroOverlay {
+  width: 100%;
+  min-height: 418px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    50px
+    48px;
+
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(6, 24, 36, 0.78),
+      rgba(6, 24, 36, 0.55),
+      rgba(6, 24, 36, 0.68)
+    );
+}
+
+.sponsorHero h1 {
+  max-width: 1150px;
+
+  margin: 0;
+
+  color: var(--snow);
+
+  text-align: center;
+
+  font-size:
+    clamp(
+      2.2rem,
+      3.6vw,
+      3.3rem
+    );
+
+  font-weight: 500;
+  line-height: 1.25;
+
+  letter-spacing: 0.02em;
+}
+
+
+/* =========================================================
+   CONTENT AREA
+   ========================================================= */
+
+.sponsorInfoSection {
+  background: #f7f9fa;
+
+  padding:
+    90px
+    60px
+    100px;
+}
+
+.sponsorInfoGrid {
+  width: 100%;
+  max-width: 1350px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.5fr)
+    minmax(260px, 0.7fr);
+
+  gap: 90px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.sponsorText {
+  max-width: 820px;
+}
+
+.sponsorText p {
+  margin:
+    0
+    0
+    28px;
+
+  color: #274150;
+
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+.sponsorText p:last-child {
+  margin-bottom: 0;
+}
+
+.sponsorNonprofit {
+  color: #4e6572 !important;
+
+  font-size: 0.98rem !important;
+}
+
+
+/* =========================================================
+   SPONSOR BUTTON
+   ========================================================= */
+
+.sponsorAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsorPacketButton {
+  min-width: 250px;
+
+  padding:
+    24px
+    34px;
+
+  display: inline-block;
+
+  background: var(--navy-deep);
+
+  border:
+    1px solid
+    var(--navy-deep);
+
+  color: var(--snow);
+
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.35;
+
+  letter-spacing: 0.04em;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.sponsorPacketButton:hover {
+  transform:
+    translateY(-3px);
+
+  background: #17435b;
+
+  border-color: #17435b;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .sponsorHero {
+    min-height: 360px;
+  }
+
+  .sponsorHeroOverlay {
+    min-height: 360px;
+
+    padding:
+      50px
+      28px;
+  }
+
+  .sponsorInfoSection {
+    padding:
+      70px
+      28px
+      80px;
+  }
+
+  .sponsorInfoGrid {
+    grid-template-columns:
+      1fr;
+
+    gap: 50px;
+  }
+
+  .sponsorText {
+    max-width: none;
+  }
+
+  .sponsorAction {
+    justify-content: flex-start;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .sponsorHero {
+    min-height: 300px;
+  }
+
+  .sponsorHeroOverlay {
+    min-height: 300px;
+
+    align-items: center;
+
+    padding:
+      40px
+      24px;
+  }
+
+  .sponsorHero h1 {
+    font-size:
+      clamp(
+        1.8rem,
+        8vw,
+        2.6rem
+      );
+  }
+
+  .sponsorInfoSection {
+    padding:
+      55px
+      24px
+      65px;
+  }
+
+  .sponsorText p {
+    font-size: 1rem;
+  }
+
+  .sponsorPacketButton {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+}
+
+.sponsorsSection {
+  background:
+    linear-gradient(
+      to bottom,
+      #0a1c2b,
+      #0b2234
+    );
+}

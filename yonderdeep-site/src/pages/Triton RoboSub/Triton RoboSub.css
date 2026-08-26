@@ -1,0 +1,133 @@
+.robosubPage {
+  min-height: calc(100vh - 80px);
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(142, 223, 242, 0.06),
+      transparent 40%
+    ),
+    linear-gradient(
+      to bottom,
+      #061824,
+      #0a1c2b
+    );
+
+  color: var(--snow);
+}
+
+
+/* =========================================================
+   COMING SOON
+   ========================================================= */
+
+.comingSoonSection {
+  min-height: 650px;
+
+  padding:
+    120px
+    48px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+
+.comingSoonEyebrow {
+  margin:
+    0
+    0
+    18px;
+
+  color: var(--glacier-cyan);
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  letter-spacing: 0.22em;
+
+  text-transform: uppercase;
+}
+
+
+.comingSoonSection h1 {
+  margin:
+    0
+    0
+    28px;
+
+  color: var(--snow);
+
+  font-size:
+    clamp(
+      4rem,
+      9vw,
+      8rem
+    );
+
+  font-weight: 500;
+
+  line-height: 0.95;
+}
+
+
+.comingSoonText {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: var(--ice-gray);
+
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+
+/* subtle decorative line */
+
+.comingSoonLine {
+  width: 90px;
+  height: 2px;
+
+  margin-top: 38px;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      var(--glacier-cyan),
+      transparent
+    );
+
+  box-shadow:
+    0 0 14px
+    rgba(142, 223, 242, 0.35);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .comingSoonSection {
+    min-height: 560px;
+
+    padding:
+      100px
+      24px;
+  }
+
+  .comingSoonText {
+    font-size: 1rem;
+  }
+
+}

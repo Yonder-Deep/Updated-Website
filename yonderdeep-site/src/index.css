@@ -1,0 +1,61 @@
+:root {
+  /* Shared brand colors */
+  --navy-deep: #061824;
+  --navy-mid: #0b2234;
+  --navy-card: #142c3b;
+
+  --glacier-cyan: #8edff2;
+
+  --snow: #f4f8fa;
+  --ice-gray: #c8d4dc;
+  --muted-gray: #8fa4b2;
+
+  --border-ice: rgba(158, 221, 238, 0.16);
+  --border-ice-hover: rgba(158, 221, 238, 0.32);
+
+  --surface-soft: rgba(255, 255, 255, 0.04);
+  --surface-hover: rgba(255, 255, 255, 0.065);
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  background: var(--navy-deep);
+  color: var(--snow);
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  background: #061824;
+  overflow-x: hidden;
+
+  margin: 0;
+  min-height: 100%;
+  background: var(--navy-deep);
+  color: var(--snow);
+}
+
+body {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
