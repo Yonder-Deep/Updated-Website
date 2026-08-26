@@ -22,7 +22,7 @@ export default function Hero() {
         playsInline
       >
         <source
-          src="/Videos/arctic.mp4"
+          src={`${import.meta.env.BASE_URL}Videos/arctic.mp4`}
           type="video/mp4"
         />
       </video>
