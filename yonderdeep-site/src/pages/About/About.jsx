@@ -22,7 +22,7 @@ const executives = [
     name: "Ethan Dauz",
     role: "Manufacturing Lead",
     image:"",
-    description: "Oversees autonomy, perception, navigation, and onboard software systems.",
+    description: "The Freak.",
   },
   {
     name: "Mozelle Monzon",
@@ -60,30 +60,18 @@ const executives = [
     image:"",
     description: "Oversees things"
   },
-  {
-    name: "Andrew Garcia",
-    role: "Software Lead",
-    image:"",
-    description: "Oversees things"
-  },
-  {
-    name: "Andrew Garcia",
-    role: "Software Lead",
-    image:"",
-    description: "Oversees things"
-  },
 ];
 
 const business = [
   {
     name: "Brooke Nguyen",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Aiden Yan",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
 ]
 
@@ -91,22 +79,22 @@ const software = [
   {
     name: "Akhil Revuri",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Noah Small",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Annya Chung",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Suhaan Khurana",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
 ];
 
@@ -114,47 +102,47 @@ const mechanical = [
   {
     name: "Axel Arrendondo",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Carlo Barocio",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Chehak Aggarwal",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Cooper Larson",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Hanxiao Shi",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Kim Tran",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Madeiline Chang",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Max Lemieux",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
    {
     name: "Melanie Harutyunyan",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
 ];
 
@@ -162,32 +150,32 @@ const electrical = [
   {
     name: "Sam Lee",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "<Myles>",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Alan",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Andrew",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Bryan",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
   {
     name: "Andrew Stewart",
     image:"",
-    description: "Works on control systems, simulation, perception, and vehicle behavior.",
+    description: "",
   },
 ];
 
