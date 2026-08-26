@@ -1,0 +1,163 @@
+.header {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+
+  background: rgba(6, 24, 36, 0.45);
+
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(158,221,238,0.18);
+
+  z-index: 1000;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.logo {
+  height: 140px;
+
+  width: auto;
+
+  filter:
+    drop-shadow(
+      0 0 10px rgba(158,221,238,.3)
+    );
+}
+
+.nav {
+  display: flex;
+
+  gap: 40px;
+
+  align-items: center;
+}
+
+.nav a {
+  position: relative;
+
+  color: var(--snow);
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  transition: .25s ease;
+}
+
+.nav a:hover {
+  color: var(--glacier-cyan);
+}
+
+.nav a::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -6px;
+
+  width: 0%;
+
+  height: 2px;
+
+  background: var(--glacier-cyan);
+
+  transition: width .25s ease;
+}
+
+.nav a:hover::after {
+
+  width: 100%;
+}
+
+.navDropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdownMain {
+  background: none;
+  border: none;
+  padding: 0;
+
+  color: inherit;
+  font: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  min-width: 220px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 0;
+
+  padding: 12px 0;
+  margin-top: 14px;
+
+  background: rgba(6, 24, 36, 0.95);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(158, 221, 238, 0.18);
+  border-radius: 14px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(10px);
+
+  transition: 0.25s ease;
+
+  z-index: 2000;
+}
+
+.navDropdown:hover .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+.dropdownMenu a {
+  padding: 12px 18px;
+
+  white-space: nowrap;
+}
+
+.dropdownMenu a:hover {
+  background: rgba(158, 221, 238, 0.08);
+}
+
+.dropdownMenu a::after {
+  display: none;
+}

@@ -1,0 +1,13 @@
+.projects_Her {
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(6, 24, 36, 1),
+      rgba(79, 111, 134, 0.65),
+      rgba(6, 24, 36, 1)
+    );
+  color: var(--snow);
+  padding: 120px 48px 80px;
+}
+
