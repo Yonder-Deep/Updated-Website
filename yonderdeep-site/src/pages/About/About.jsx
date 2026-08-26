@@ -21,7 +21,7 @@ const executives = [
   {
     name: "Ethan Dauz",
     role: "Manufacturing Lead",
-    image:"",
+    image:`${import.meta.env.BASE_URL}Images/Member Photos/Ethan.jpg`,
     description: "The Freak.",
   },
   {
