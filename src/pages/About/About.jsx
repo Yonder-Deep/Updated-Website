@@ -33,7 +33,7 @@ const executives = [
   {
     name: "Rosslyn Farnan",
     role: "Triton RoboSub Lead",
-    image:`${import.meta.env.BASE_URL}Images/Member Photos/Rosslyn.jpg`,
+    image:`${import.meta.env.BASE_URL}Images/Member Photos/Rosslyn.JPG`,
     description: "Leads team operations, project direction, and external coordination.",
   },
   {
