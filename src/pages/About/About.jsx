@@ -31,6 +31,12 @@ const executives = [
     description: "Oversees things"
   },
   {
+    name: "Rosslyn Farnan",
+    role: "Triton RoboSub Lead",
+    image:`${import.meta.env.BASE_URL}Images/Member Photos/Rosslyn.jpg`,
+    description: "Leads team operations, project direction, and external coordination.",
+  },
+  {
     name: "Brennon Yoo",
     role: "Software Lead",
     image: `${import.meta.env.BASE_URL}Images/Member Photos/Brennon.jpg`,
@@ -105,7 +111,7 @@ const mechanical = [
     description: "",
   },
   {
-    name: "Carlo Barocio",
+    name: "Carlos Barocio",
     image:"",
     description: "",
   },
