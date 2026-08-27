@@ -213,14 +213,14 @@ export default function USV() {
               <div className="highlightItem">
                 <ScrollReveal>
                   <span>Platform</span>
-                  <strong>Surface</strong>
+                  <strong>Surface water</strong>
                 </ScrollReveal>
               </div>
 
               <div className="highlightItem">
                 <ScrollReveal delay={50}>
                   <span>Dimensions</span>
-                  <strong>TBD</strong>
+                  <strong>6' x 4' x 2'</strong>
                 </ScrollReveal>
               </div>
 
