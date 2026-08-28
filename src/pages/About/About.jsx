@@ -94,7 +94,7 @@ const software = [
   },
   {
     name: "Annya Chung",
-    image:`${import.meta.env.BASE_URL}Images/Member Photos/Annya.jpg`,
+    image:`${import.meta.env.BASE_URL}Images/Member Photos/Annya.jpeg`,
     description: "",
   },
   {
