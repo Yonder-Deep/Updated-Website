@@ -55,9 +55,9 @@ const executives = [
     description: "Oversees things"
   },
   {
-    name: "Jess",
+    name: "Jessica Mora Jacinto",
     role: "Electrical Lead",
-    image:"",
+    image:`${import.meta.env.BASE_URL}Images/Member Photos/Jess.jpg`,
     description: "Oversees things"
   },
   {
